@@ -1,4 +1,4 @@
-import datetime from datetime
+from datetime import datetime
 from flask import session
 
 from database import Database
