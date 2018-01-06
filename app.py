@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, session
+from flask import Flask, render_template, request, session, make_response
 
 from database import Database
 from menu import Menu
@@ -61,6 +61,19 @@ def user_blogs(user_id):
     blogs = user.get_blogs()
 
     return render_template("user_blogs.html", blogs=blogs, email = '')
+
+@app.route('/blogs/new', methods=['POST','GET'])
+def create_new_blog():
+    if request.method == 'GET':
+        return render_template('new_blog.html')
+    else:
+        title = request.form['title']
+        description = request.form['description']
+        user = User.get_by_email(session['email'])
+
+        new_blog = Blog(user.emal, title, description, user._id)
+        new_blog.save_to_mongo()
+        return make_response(user_blogs(user._id))
 
 @app.route('/posts/<string:blog_id>')
 def blog_posts(blog_id):
