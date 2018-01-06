@@ -49,9 +49,21 @@ def register_user():
     return render_template("profile.html", email = session['email'])
 
 
+@app.route('/blogs/<string:user_id>')
+@app.route('/blogs')
+def user_blogs(user_id):
+    if user_id is not None:
+        user = User.get_by_id(user_id)
+    else:
+        user = User.get_by_email(session['email'])
+    user = User.get_blogs()
+    blogs = user.get_blogs()
+
+    return render_template("user_blogs.html", blogs=blogs, email = '')
+
 if __name__ == '__main__':
     app.run()
-#Database.initialize()
+#Da tabase.initialize()
 #menu = Menu()
 #menu.run_menu()
 
