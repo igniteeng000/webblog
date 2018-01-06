@@ -7,6 +7,7 @@ from menu import Menu
 from models.user import User
 
 app = Flask(__name__)
+app.secret_key = "ashu key"
 @app.route('/')
 def hello_world():
     return render_template('login.html')
