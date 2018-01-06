@@ -4,6 +4,7 @@ from database import Database
 from menu import Menu
 
 #python flask mongo jinja
+from models.blog import Blog
 from models.user import User
 
 app = Flask(__name__)
@@ -61,6 +62,11 @@ def user_blogs(user_id):
 
     return render_template("user_blogs.html", blogs=blogs, email = '')
 
+@app.route('/posts/<string:blog_id>')
+def blog_posts(blog_id):
+    blog = Blog.get_posts()
+
+    return render_template('posts.html', posts = blog.posts, blog_title=blog.title)
 if __name__ == '__main__':
     app.run()
 #Da tabase.initialize()
