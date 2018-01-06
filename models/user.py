@@ -73,5 +73,6 @@ class User(object):
                       content = content,
                       date = date
                        )
+
     def save_to_mongo(self):
         Database.insert("users", self.json())
