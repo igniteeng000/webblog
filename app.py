@@ -8,26 +8,26 @@ from models.blog import Blog
 from models.user import User
 
 app = Flask(__name__)
-app.secret_key = "ashu key"
+app.secret_key = "ashu"
+# @app.route('/')
+# def home_template():
+#     return render_template('home.html')
+#
+
+
 @app.route('/')
-def home_template():
-    return render_template('home.html')
-
-
-
-@app.route('/login')
 def login_template():
     return render_template('login.html')
 
-@app.route('/register')
-def register_template():
-    return render_template('register.html')
+# @app.route('/register')
+# def register_template():
+#     return render_template('register.html')
 
 @app.before_first_request
 def initialize_database():
     Database.initialize()
 
-@app.route('/auth/login', methods=['POST'])
+@app.route('/login', methods=['POST'])
 def login_user():
     email = request.form['email']
     password = request.form['password']
