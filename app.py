@@ -32,14 +32,15 @@ def login_user():
     email = request.form['email']
     password = request.form['password']
 
-    if User.login.valid(email, password):
+    if User.login_valid(email, password):
         User.login(email)
+
 
     else:
         session['email'] = None
     return render_template("profile.html", email = session['email'])
 
-@app.route('/auth/register', methods=['POST'])
+@app.route('/register', methods=['POST'])
 def register_user():
     email = request.form['email']
     password = request.form['password']

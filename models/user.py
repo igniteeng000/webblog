@@ -22,10 +22,12 @@ class User(object):
         if data is not None:
             return cls(**data)
     @staticmethod
-    def login_valid(self, email, password):
+    def login_valid(email, password):
         user = User.get_by_email(email)
+
         if user is not None:
             return user.password == password
+
         return False
 
     @classmethod  #here cls = User since we are using same class function
