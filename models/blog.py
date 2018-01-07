@@ -15,11 +15,18 @@ class Blog(object):
         self._id = uuid.uuid4().hex if _id is None else _id
 
 
-    def new_post(self, title, content, date = datetime.utcnow()):
-        post = Post(blog_id=self._id,
-                    title= title,
+    def new_blog(self, title, description):
+        blog = Blog(author = self.email,
+                    title = title,
+                    description = description,
+                    author_id = self.id)
+        blog.save_to_mongo()
+
+    @staticmethod
+    def new_post(blog_id, title, content, date = datetime.utcnow()):
+        blog = Blog.from_mongo(blog_id)
+        post = Post(title= title,
                     content=content,
-                    author = self.author,
                     created_date = date)
 
         post.save_to_mongo()
