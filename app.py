@@ -19,15 +19,15 @@ app.secret_key = "ashu"
 def login_template():
     return render_template('login.html')
 
-# @app.route('/register')
-# def register_template():
-#     return render_template('register.html')
+@app.route('/register')
+def register_template():
+    return render_template('register.html')
 
 @app.before_first_request
 def initialize_database():
     Database.initialize()
 
-@app.route('/login', methods=['POST'])
+@app.route('/auth/login', methods=['POST'])
 def login_user():
     email = request.form['email']
     password = request.form['password']
@@ -40,7 +40,7 @@ def login_user():
         session['email'] = None
     return render_template("profile.html", email = session['email'])
 
-@app.route('/register', methods=['POST'])
+@app.route('/auth/register', methods=['POST'])
 def register_user():
     email = request.form['email']
     password = request.form['password']

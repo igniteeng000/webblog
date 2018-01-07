@@ -1,3 +1,4 @@
+import uuid
 from datetime import datetime
 from flask import session
 
@@ -9,6 +10,7 @@ class User(object):
     def __init__(self, email, password, _id = None):
         self.email = email
         self.password = password
+        self._id = uuid.uuid4().hex if _id is None else _id
         pass
     @classmethod
     def get_by_email(cls,email):
@@ -54,9 +56,9 @@ class User(object):
 
     def json(self):
         return {
-            "email" : self.email,
-            "_id" : self._id,
-            "password" : self.password
+            "email": self.email,
+            "_id": self._id,
+            "password": self.password
         }
     def get_blogs(self):
         return Blog.find_by_author_id(self._id)
