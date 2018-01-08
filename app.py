@@ -79,7 +79,7 @@ def create_new_blog():
 
 @app.route('/posts/<string:blog_id>')
 def blog_posts(blog_id):
-    blog = Blog.get_posts()
+    blog = Blog.get_posts(blog_id)
 
     return render_template('posts.html', posts = blog.posts, blog_title=blog.title)
 if __name__ == '__main__':
