@@ -73,7 +73,7 @@ def create_new_blog():
         description = request.form['description']
         user = User.get_by_email(session['email'])
 
-        new_blog = Blog(user.emal, title, description, user._id)
+        new_blog = Blog(user.email, title, description, user._id)
         new_blog.save_to_mongo()
         return make_response(user_blogs(user._id))
 
