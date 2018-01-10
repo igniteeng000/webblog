@@ -43,19 +43,19 @@ class Blog(object):
             'description': self.description,
             '_id': self._id
         }
-
-    @classmethod
-    def get_from_mongo(cls, id):
-        blog_data = Database.find_one(collection='blogs', query={'_id': id})
-
-        return cls(**blog_data)
+    #
+    # @classmethod
+    # def get_from_mongo(cls, id):
+    #     blog_data = Database.find_one(collection='blogs', query={'_id': id})
+    #
+    #     return cls(**blog_data)
 
     @staticmethod
     def from_blog(_id):
         return Database.find(collection='posts', query={'blog_id': id})
 
     @classmethod
-    def from_mongo(cls, _id):
+    def from_mongo(cls, id):
         blog_data = Database.find_one(collection='blogs', query={'_id': id})
 
         return cls(**blog_data)
