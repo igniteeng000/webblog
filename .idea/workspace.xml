@@ -4,13 +4,11 @@
     <bookmark url="file://$PROJECT_DIR$/models/post.py" line="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d99fa687-2e4e-485d-9722-f6e836c9ac5a" name="Default" comment="">
+    <list default="true" id="d99fa687-2e4e-485d-9722-f6e836c9ac5a" name="Default" comment="displaying works also worked">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/blog.py" afterPath="$PROJECT_DIR$/models/blog.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/post.py" afterPath="$PROJECT_DIR$/models/post.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/new_post.html" afterPath="$PROJECT_DIR$/templates/new_post.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/posts.html" afterPath="$PROJECT_DIR$/templates/posts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/user_blogs.html" afterPath="$PROJECT_DIR$/templates/user_blogs.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,15 +20,15 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/terminal$app.coverage" NAME="app Coverage Results" MODIFIED="1515235609585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/terminal$row.coverage" NAME="row Coverage Results" MODIFIED="1515130247289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/webblog$app.coverage" NAME="app Coverage Results" MODIFIED="1515613441031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/webblog$app.coverage" NAME="app Coverage Results" MODIFIED="1515616324718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="posts.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="posts.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/posts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+            <state relative-caret-position="357">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -49,11 +47,21 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="89" column="35" lean-forward="false" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
+            <state relative-caret-position="0">
+              <caret line="90" column="24" lean-forward="true" selection-start-line="90" selection-start-column="24" selection-end-line="90" selection-end-column="24" />
               <folding>
                 <element signature="e#0#73#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_post.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/new_post.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,6 +140,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="ig" />
         <option value="igniteeng000 &lt;igniteeng000@gmail.com&gt;" />
       </list>
     </option>
@@ -147,7 +156,6 @@
         <option value="$PROJECT_DIR$/templates/register.ipynb" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/new_post.py" />
-        <option value="$PROJECT_DIR$/templates/new_post.html" />
         <option value="$PROJECT_DIR$/templates/register.html" />
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/models/user.py" />
@@ -155,10 +163,11 @@
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/templates/new_blog.html" />
         <option value="$PROJECT_DIR$/models/post.py" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/templates/user_blogs.html" />
         <option value="$PROJECT_DIR$/models/blog.py" />
         <option value="$PROJECT_DIR$/templates/posts.html" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/templates/new_post.html" />
       </list>
     </option>
   </component>
@@ -497,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515609130861</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="displaying works also worked">
+      <created>1515613686327</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1515613686327</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -593,7 +609,8 @@
     <MESSAGE value="fixing some more bugs." />
     <MESSAGE value="finally blogs are displaying" />
     <MESSAGE value="working on displaying posts" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on displaying posts" />
+    <MESSAGE value="displaying works also worked" />
+    <option name="LAST_COMMIT_MESSAGE" value="displaying works also worked" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -874,13 +891,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/new_post.py" />
-    <entry file="file://$PROJECT_DIR$/templates/new_post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -945,14 +955,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/post.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/user_blogs.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -979,20 +981,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/post.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="89" column="35" lean-forward="false" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
+        <state relative-caret-position="0">
+          <caret line="90" column="24" lean-forward="true" selection-start-line="90" selection-start-column="24" selection-end-line="90" selection-end-column="24" />
           <folding>
             <element signature="e#0#73#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/posts.html">
+    <entry file="file://$PROJECT_DIR$/templates/new_post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        <state relative-caret-position="336">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
