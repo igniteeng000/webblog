@@ -21,7 +21,7 @@ class Post(object):
 
     def json(self):
         return {
-            'id': self.id,
+            'id': self._id,
             'blog_id': self.blog_id,
             'author': self.author,
             'content': self.content,
@@ -29,8 +29,8 @@ class Post(object):
             'created_date': self.created_date
         }
     @classmethod
-    def from_mongo(cls, id):
-        post_data = Database.find_one(collection='posts', query={'_id' :id})
+    def from_mongo(cls, _id):
+        post_data = Database.find_one(collection='posts', query={'_id': _id})
 
         return cls(**post_data)
     @staticmethod
