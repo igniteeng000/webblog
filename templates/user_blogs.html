@@ -2,10 +2,7 @@
 {% block content %}
 <div class ="contatiner">
     <h2>{{email}}'s blogs</h2>
-    <h1>hello</h1>
-    <h1>jean {{blogs.title}} hfuso</h1>
-    {% for blog in blogs %}
-    <h1>why?</h1>
+    {% for blog in blogs: %}
     <h3> {{blog.title}}</h3>
     <p>{{blog.description}}</p>
     <hr>
